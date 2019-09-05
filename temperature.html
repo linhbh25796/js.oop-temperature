@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+</body>
+<script src="Temperature.js"></script>
+<script>
+
+    let cel = prompt("Celcius: ");
+    let fahren = prompt("Fahrenheit: ");
+    let temperature = new Temperature(cel,fahren);
+    temperature.setCelcius(cel);
+    temperature.setFahrenheit(fahren);
+    document.write("Celcius:"+temperature.getCelcius() +"<br/>");
+    document.write("Fahrenheit: "+temperature.getFahrenheit()+"<br/>");
+    document.write(temperature.getCelcius()+" celcius to Fahrenheit: "+temperature.cToF()+"<br/>");
+    document.write(temperature.getFahrenheit()+" fahrenheit to Celcius: "+temperature.fToC());
+
+
+</script>
+</html>
